@@ -1,0 +1,32 @@
+using System.IO;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+class Program
+{
+    static void Main()
+    {
+       String lett = "asdfghjklqwertyuia";
+        //create variables 
+        int R = 0;
+        char dar = lett[R];
+        
+        //create list
+        ArrayList letters = new ArrayList();
+            
+        //read the letter
+        while (!letters.Contains(lett[R]))
+        {
+            //
+            dar = lett[R];
+            letters.Add(dar);
+            R++;
+        }
+        //Print out the letter
+        Console.WriteLine(lett[R]);
+    }
+}    
